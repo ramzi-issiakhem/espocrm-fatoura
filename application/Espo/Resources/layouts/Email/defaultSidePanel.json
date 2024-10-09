@@ -1,0 +1,20 @@
+[
+    {
+        "name": "teams"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "folderString"
+    },
+    {
+        "name": "replied"
+    },
+    {
+        "name": "replies"
+    },
+    {
+        "name": "tasks"
+    }
+]

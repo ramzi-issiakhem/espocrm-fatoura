@@ -1,0 +1,114 @@
+{
+    "Global": {
+        "stars": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        },
+        "optimisticConcurrencyControl": {
+            "location": "entityDefs",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        }
+    },
+    "@Company": {
+        "updateDuplicateCheck": {
+            "location": "recordDefs",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        },
+        "duplicateCheckFieldList": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "multiEnum",
+                "tooltip": true,
+                "view": "views/admin/entity-manager/fields/duplicate-check-field-list"
+            }
+        },
+        "assignedUsers": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        }
+    },
+    "@Person": {
+        "updateDuplicateCheck": {
+            "location": "recordDefs",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        },
+        "duplicateCheckFieldList": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "multiEnum",
+                "tooltip": true,
+                "view": "views/admin/entity-manager/fields/duplicate-check-field-list"
+            }
+        },
+        "assignedUsers": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        }
+    },
+    "@Base": {
+        "updateDuplicateCheck": {
+            "location": "recordDefs",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        },
+        "duplicateCheckFieldList": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "multiEnum",
+                "tooltip": true,
+                "view": "views/admin/entity-manager/fields/duplicate-check-field-list"
+            }
+        },
+        "assignedUsers": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        }
+    },
+    "@BasePlus": {
+        "updateDuplicateCheck": {
+            "location": "recordDefs",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        },
+        "duplicateCheckFieldList": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "multiEnum",
+                "tooltip": true,
+                "view": "views/admin/entity-manager/fields/duplicate-check-field-list"
+            }
+        },
+        "assignedUsers": {
+            "location": "scopes",
+            "fieldDefs": {
+                "type": "bool",
+                "tooltip": true
+            }
+        }
+    }
+}

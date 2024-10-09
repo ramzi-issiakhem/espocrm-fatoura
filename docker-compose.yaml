@@ -1,0 +1,57 @@
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: espocrm
+      MYSQL_USER: espocrm
+      MYSQL_PASSWORD: database_password
+    volumes:
+      - mysql:/var/lib/mysql
+      - ./espocrm.sql:/docker-entrypoint-initdb.d/espocrm.sql
+    restart: always
+    networks:
+        - espocrm-network
+    ports:
+        -   "3306:3306"
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./:/var/www/html/espocrm
+    restart: always
+    depends_on:
+        - espocrm-php
+    networks:
+        - espocrm-network
+
+  espocrm-php:
+    build:
+      context: .
+      dockerfile: ./docker/php/DockerFile
+    container_name: espocrm-php
+    volumes:
+      - ./:/var/www/html/espocrm
+      - vendor:/var/www/html/espocrm/vendor
+    restart: always
+    ports:
+        -   "9000:9000"
+    depends_on:
+        -   mysql
+    networks:
+        - espocrm-network
+
+
+networks:
+    espocrm-network:
+
+volumes:
+  mysql:
+  vendor:

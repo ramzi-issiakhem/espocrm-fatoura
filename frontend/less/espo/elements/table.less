@@ -1,0 +1,187 @@
+table.table,
+.list-container > .list,
+.calendar-container > .calendar,
+.calendar-container > .timeline {
+    background-color: var(--table-bg);
+}
+
+.table {
+    margin-bottom: 10px;
+
+    > thead,
+    > tbody {
+        > tr {
+            > th:first-child,
+            > td:first-child {
+                padding-left: @padding-base-horizontal;
+
+                @media screen and (max-width: (@screen-sm-min - 1px)) {
+                    padding-left: @table-cell-padding;
+                }
+            }
+
+            > th:last-child,
+            > td:last-child {
+                padding-right: @padding-base-horizontal;
+
+                @media screen and (max-width: (@screen-sm-min - 1px)) {
+                    padding-right: @table-cell-padding;
+                }
+            }
+        }
+    }
+
+    &:has(> tbody > tr.border-top-highlighted:first-child) {
+        > thead > tr:last-child {
+            > th {
+                border-bottom: 3px solid var(--brand-info) !important;
+            }
+        }
+    }
+
+    > tbody {
+        > tr {
+            &.border-bottom-highlighted {
+                > td {
+                    border-bottom: 3px solid var(--brand-info) !important;
+                }
+            }
+
+            &.border-top-highlighted {
+                > td {
+                    border-top: 3px solid var(--brand-info) !important;
+                }
+            }
+        }
+    }
+}
+
+table.table > thead th > a {
+    color: var(--text-muted-color);
+}
+
+table.table > thead th {
+    color: var(--text-muted-color);
+}
+
+th {
+    font-weight: 600;
+}
+
+.table thead > tr > th {
+    border-bottom: 1px solid @table-border-color;
+    font-weight: normal;
+}
+
+.table tr > th {
+    font-weight: normal;
+}
+
+.table tr.accented {
+    background-color: @table-bg-accent;
+}
+
+.table td.accented {
+    background-color: @table-bg-accent;
+}
+
+table.table-bordered-inside {
+    border-collapse: collapse;
+    border-style: hidden;
+
+    td, th {
+        border: 1px solid var(--default-border-color);
+    }
+}
+
+table.table-bottom-bordered {
+    border-bottom: 1px solid var(--default-border-color);
+}
+
+table.table > tbody td > .list-row-buttons button {
+    position: relative;
+    margin-top: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.table.table-no-overflow {
+    > tbody > tr > td,
+    > tbody > tr > th,
+    > thead > tr > th {
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+table.table-fixed {
+    table-layout: fixed;
+}
+
+.table.less-padding > thead > tr > th,
+.table.less-padding > tbody >tr > th,
+.table.less-padding > tfoot >tr > th,
+.table.less-padding > thead >tr > td,
+.table.less-padding > tbody >tr > td,
+.table.less-padding > tfoot >tr > td {
+    padding: @table-cell-padding @table-cell-less-padding @table-cell-padding @table-cell-less-padding;
+}
+
+table.no-margin {
+    margin-bottom: 0;
+}
+
+table.table-panel {
+    border-collapse: separate;
+    border-radius: var(--panel-border-radius);
+    border: var(--panel-border-width) solid var(--panel-default-border);
+
+    thead > tr > th {
+        border-bottom: 0;
+    }
+
+    tbody {
+        > tr:nth-last-child(1 of :not(.hidden)) {
+            > td:first-child {
+                border-bottom-left-radius: var(--panel-border-radius);
+            }
+
+            > td:last-child {
+                border-bottom-right-radius: var(--panel-border-radius);
+            }
+        }
+    }
+}
+
+.table.table-striped {
+    background-color: transparent;
+}
+
+table td.cell-nowrap,
+table th.cell-nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+table td {
+    > .btn-group.row-dropdown-group {
+        > .btn.dropdown-toggle {
+            margin-top: -6px;
+            margin-bottom: -6px;
+
+            > .caret {
+                top: -1px;
+                position: relative;
+            }
+        }
+    }
+}
+
+.table {
+    td.cell {
+        .text-bold {
+            font-weight: 700;
+        }
+    }
+}
