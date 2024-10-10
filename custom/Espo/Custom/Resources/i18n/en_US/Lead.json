@@ -1,0 +1,84 @@
+{
+    "fields": {
+        "cCallStatus": "Call Status",
+        "cEvents": "Events",
+        "cEmailStatus": "Email Status",
+        "accountName": "Company Name",
+        "createdAccount": "Company",
+        "createdOpportunity": "Client",
+        "title": "Role",
+        "addressCity": "Wilaya",
+        "cSourceData": "Source Data",
+        "cLicenseIssued": "License Issued",
+        "cComments": "Comments",
+        "cQuoteNumber": "Quote Number",
+        "cInvoiceNumber": "Invoice Number"
+    },
+    "options": {
+        "cCallStatus": {
+            "Not Called": "Not Called",
+            "Did not pick up": "Did not pick up",
+            "Call Back": "Call Back",
+            "Wrong Info": "Wrong Info",
+            "Not Interested": "Not Interested",
+            "interested": "interested",
+            "Ghosted": "Ghosted",
+            "Interested": "Interested",
+            "Call Received": "Call Received",
+            "Message": "Message"
+        },
+        "status": {
+            "New": "New",
+            "Assigned": "Assigned",
+            "In Process": "In Process",
+            "Converted": "Converted",
+            "Dead": "Dead",
+            "Nurtured": "Nurtured",
+            "Qualified": "Qualified",
+            "Negotiation": "Negotiation",
+            "Won": "Won",
+            "Lost": "Lost"
+        },
+        "cEvents": {
+            "Filled website form on mobile": "Filled website form on mobile",
+            "Filled website form": "Filled website form",
+            "Visited the page on desktop": "Visited the page on desktop",
+            "Visited the page on mobile": "Visited the page on mobile",
+            "Registered": "Registered",
+            "": "",
+            "Using App": "Using App",
+            "Downloaded Mobile App": "Downloaded Mobile App"
+        },
+        "cEmailStatus": {
+            "Unsubscribed": "Unsubscribed",
+            "Link Clicked": "Link Clicked",
+            "Opened": "Opened",
+            "Delivered": "Delivered",
+            "": ""
+        },
+        "source": {
+            "": "",
+            "Call": "Call",
+            "Email": "Email",
+            "Meta Ads": "Meta Ads",
+            "Email Campaign": "Email Campaign",
+            "Affiliate": "Affiliate",
+            "Blog": "Blog",
+            "Public Relations": "Public Relations"
+        },
+        "cComments": {
+            "Cold": "Cold",
+            "Warm": "Warm",
+            "Asked for pricing": "Asked for pricing",
+            "Curious": "Curious",
+            "Onboarding": "Onboarding",
+            "Will test and get back": "Will test and get back",
+            "Expensive": "Expensive",
+            "Missing Features": "Missing Features",
+            "I forgot": "I forgot",
+            "Tried Mobile App": "Tried Mobile App",
+            "Send Documentation": "Send Documentation",
+            "": ""
+        }
+    }
+}

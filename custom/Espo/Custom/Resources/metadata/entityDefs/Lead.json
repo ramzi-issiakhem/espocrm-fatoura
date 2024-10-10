@@ -1,0 +1,209 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "accountName",
+            "emailAddress",
+            "addressCity",
+            "phoneNumber"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "convertEntityList": [
+        "Opportunity"
+    ],
+    "fields": {
+        "cCallStatus": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Not Called",
+                "Did not pick up",
+                "Call Back",
+                "Wrong Info",
+                "Not Interested",
+                "Ghosted",
+                "Interested",
+                "Call Received",
+                "Message"
+            ],
+            "style": {
+                "Not Called": "info",
+                "Did not pick up": "warning",
+                "Call Back": "primary",
+                "Wrong Info": "danger",
+                "Not Interested": "danger",
+                "Ghosted": "danger",
+                "Interested": "success",
+                "Call Received": "info",
+                "Message": "info"
+            },
+            "default": "Not Called",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "status": {
+            "options": [
+                "New",
+                "Nurtured",
+                "Qualified",
+                "Negotiation",
+                "Won",
+                "Lost"
+            ],
+            "style": {
+                "New": null,
+                "Nurtured": "info",
+                "Qualified": "primary",
+                "Negotiation": "warning",
+                "Won": "success",
+                "Lost": "danger"
+            },
+            "notActualOptions": [],
+            "required": true,
+            "audited": false,
+            "displayAsLabel": true,
+            "labelType": "state"
+        },
+        "cEvents": {
+            "type": "enum",
+            "options": [
+                "Filled website form on mobile",
+                "Filled website form",
+                "Registered",
+                "Using App",
+                "Downloaded Mobile App",
+                ""
+            ],
+            "style": {
+                "Filled website form on mobile": null,
+                "Filled website form": null,
+                "Registered": null,
+                "Using App": null,
+                "Downloaded Mobile App": null,
+                "": null
+            },
+            "default": "Filled website form on mobile",
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cEmailStatus": {
+            "type": "enum",
+            "options": [
+                "Unsubscribed",
+                "Link Clicked",
+                "Opened",
+                "Delivered",
+                ""
+            ],
+            "default": null,
+            "style": {
+                "Unsubscribed": "danger",
+                "Link Clicked": "success",
+                "Opened": "success",
+                "Delivered": "info",
+                "": null
+            },
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "accountName": {
+            "options": []
+        },
+        "title": {
+            "options": []
+        },
+        "emailAddress": {
+            "required": true
+        },
+        "name": {
+            "required": true
+        },
+        "phoneNumber": {
+            "required": true
+        },
+        "cSourceData": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "source": {
+            "options": [
+                "",
+                "Call",
+                "Email",
+                "Meta Ads",
+                "Email Campaign",
+                "Affiliate",
+                "Blog",
+                "Public Relations"
+            ],
+            "style": {
+                "": null,
+                "Call": null,
+                "Email": null,
+                "Meta Ads": null,
+                "Email Campaign": null,
+                "Affiliate": null,
+                "Blog": null,
+                "Public Relations": null
+            }
+        },
+        "cLicenseIssued": {
+            "notNull": true,
+            "type": "bool",
+            "isCustom": true,
+            "audited": true
+        },
+        "cComments": {
+            "type": "enum",
+            "options": [
+                "Cold",
+                "Warm",
+                "Asked for pricing",
+                "Curious",
+                "Onboarding",
+                "Will test and get back",
+                "Expensive",
+                "Missing Features",
+                "I forgot",
+                "Tried Mobile App",
+                "Send Documentation",
+                ""
+            ],
+            "style": {
+                "Cold": null,
+                "Warm": null,
+                "Asked for pricing": null,
+                "Curious": null,
+                "Onboarding": null,
+                "Will test and get back": null,
+                "Expensive": null,
+                "Missing Features": null,
+                "I forgot": null,
+                "Tried Mobile App": null,
+                "Send Documentation": null,
+                "": null
+            },
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cQuoteNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cInvoiceNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        }
+    }
+}

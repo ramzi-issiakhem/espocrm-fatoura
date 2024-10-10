@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "\nif (parentType == \"Opportunity\") {\n    record\\update(parentType, parentId, \"stage\", \"Meeting\");\n}"
+}

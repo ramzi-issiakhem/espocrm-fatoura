@@ -1,0 +1,90 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "stage"
+                },
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                {
+                    "name": "probability"
+                },
+                {
+                    "name": "closeDate"
+                }
+            ],
+            [
+                {
+                    "name": "contacts"
+                },
+                {
+                    "name": "leadSource"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ],
+            [
+                {
+                    "name": "cCallStatus"
+                },
+                {
+                    "name": "cContactedStatus"
+                }
+            ],
+            [
+                {
+                    "name": "cEmailStatus"
+                },
+                {
+                    "name": "cEvent"
+                }
+            ],
+            [
+                {
+                    "name": "cClientFeedback"
+                },
+                {
+                    "name": "cLeadSource"
+                }
+            ],
+            [
+                {
+                    "name": "originalLead"
+                },
+                {
+                    "name": "campaign"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "cPhoneNumber"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "noteStyle": "info",
+        "label": ""
+    }
+]

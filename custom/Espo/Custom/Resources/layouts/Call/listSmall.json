@@ -1,0 +1,17 @@
+[
+    {
+        "name": "name",
+        "link": "true"
+    },
+    {
+        "name": "status",
+        "width": 25
+    },
+    {
+        "name": "cCallStatus"
+    },
+    {
+        "name": "dateStart",
+        "width": 25
+    }
+]

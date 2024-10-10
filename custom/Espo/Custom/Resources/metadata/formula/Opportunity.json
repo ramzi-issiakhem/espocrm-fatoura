@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "\nif (entity\\isAttributeChanged(\"cCallStatus\")) {\n    if (cCallStatus == \"Not Interested\") {\n        stage = \"Lost\"\n    }\n}"
+}

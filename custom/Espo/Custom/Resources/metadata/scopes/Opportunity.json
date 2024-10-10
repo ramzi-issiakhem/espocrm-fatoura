@@ -1,0 +1,10 @@
+{
+    "stream": true,
+    "disabled": false,
+    "statusField": "stage",
+    "kanbanStatusIgnoreList": [
+        "Closed Lost"
+    ],
+    "stars": false,
+    "assignedUsers": false
+}

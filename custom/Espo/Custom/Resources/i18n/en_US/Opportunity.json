@@ -1,0 +1,63 @@
+{
+    "labels": {
+        "Create Opportunity": "Create Client"
+    },
+    "options": {
+        "stage": {
+            "Qualification": "Qualified",
+            "Proposal": "Contacted",
+            "Negotiation": "Negotiation",
+            "Closed Won": "Closed Won",
+            "Closed Lost": "Closed Lost",
+            "Meeting": "Meeting",
+            "Contacted": "Contacted",
+            "Won": "Won",
+            "Lost": "Lost",
+            "New": "New",
+            "Feedback": "Feedback",
+            "Renewed": "Renewed",
+            "Retained": "Retained",
+            "Churned": "Churned"
+        },
+        "cCallStatus": {
+            "Not Interested": "Not Interested",
+            "Not Called": "Not Called",
+            "Interested": "Interested",
+            "Didn't pick up": "Didn't pick up",
+            "Ghosted": "Ghosted"
+        },
+        "cClientFeedback": {
+            "Cold": "Cold",
+            "Warm": "Warm",
+            "Asked for pricing": "Asked for pricing",
+            "Curious": "Curious",
+            "Onboarding": "Onboarding",
+            "Will test and get back": "Will test and get back",
+            "Expensive": "Expensive",
+            "Missing features": "Missing features",
+            "I forgot": "I forgot",
+            "Mobile app": "Mobile app",
+            "Send documentation": "Send documentation"
+        },
+        "cContactedStatus": [],
+        "cEmailStatus": [],
+        "cEvent": {
+            "Using App": "Using App",
+            "Using Web": "Using Web",
+            "Downloaded mobile app": "Downloaded mobile app"
+        },
+        "cLeadSource": {
+            "Ad Id": "Ad Id",
+            "Email Campaign": "Email Campaign"
+        }
+    },
+    "fields": {
+        "cCallStatus": "CallStatus",
+        "cClientFeedback": "Client Feedback",
+        "cContactedStatus": "Contacted Status",
+        "cEmailStatus": "Email Status",
+        "cEvent": "Event",
+        "cLeadSource": "Lead Source",
+        "cPhoneNumber": "Phone Number"
+    }
+}

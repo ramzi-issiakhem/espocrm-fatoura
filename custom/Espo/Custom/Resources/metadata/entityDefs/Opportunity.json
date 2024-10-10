@@ -1,0 +1,139 @@
+{
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false,
+        "countDisabled": false
+    },
+    "optimisticConcurrencyControl": false,
+    "fields": {
+        "stage": {
+            "options": [
+                "New",
+                "Feedback",
+                "Renewed",
+                "Retained",
+                "Churned"
+            ],
+            "default": "New",
+            "probabilityMap": {
+                "New": 50,
+                "Feedback": 50,
+                "Renewed": 50,
+                "Retained": 50,
+                "Churned": 50
+            },
+            "style": {
+                "New": null,
+                "Feedback": "info",
+                "Renewed": "primary",
+                "Retained": "success",
+                "Churned": "danger"
+            },
+            "displayAsLabel": true,
+            "labelType": "state"
+        },
+        "cCallStatus": {
+            "type": "enum",
+            "options": [
+                "Not Interested",
+                "Not Called",
+                "Interested",
+                "Didn't pick up",
+                "Ghosted"
+            ],
+            "default": "Not Called",
+            "style": {
+                "Not Interested": "danger",
+                "Not Called": "info",
+                "Interested": "success",
+                "Didn't pick up": "warning",
+                "Ghosted": "danger"
+            },
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "name": {
+            "options": [
+                "Deal - Fatoura Compta Auto-Entrepreneur",
+                "Deal - Fatoura Compta Premium"
+            ]
+        },
+        "closeDate": {
+            "default": "javascript: return this.dateTime.getToday();"
+        },
+        "cClientFeedback": {
+            "type": "array",
+            "storeArrayValues": true,
+            "noEmptyString": true,
+            "default": [],
+            "options": [
+                "Cold",
+                "Warm",
+                "Asked for pricing",
+                "Curious",
+                "Onboarding",
+                "Will test and get back",
+                "Expensive",
+                "Missing features",
+                "I forgot",
+                "Mobile app",
+                "Send documentation"
+            ],
+            "isCustom": true
+        },
+        "cContactedStatus": {
+            "type": "enum",
+            "default": null,
+            "optionsReference": "Lead.cContactedStatus",
+            "style": {},
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cEmailStatus": {
+            "type": "enum",
+            "default": "Delivered",
+            "optionsReference": "Lead.cEmailStatus",
+            "style": {},
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cEvent": {
+            "type": "enum",
+            "options": [
+                "Using App",
+                "Using Web",
+                "Downloaded mobile app"
+            ],
+            "default": "Using Web",
+            "style": {
+                "Using App": null,
+                "Using Web": null,
+                "Downloaded mobile app": null
+            },
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cLeadSource": {
+            "type": "array",
+            "storeArrayValues": true,
+            "noEmptyString": true,
+            "default": [],
+            "options": [
+                "Ad Id",
+                "Email Campaign"
+            ],
+            "isCustom": true
+        },
+        "cPhoneNumber": {
+            "type": "varchar",
+            "required": false,
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        }
+    }
+}

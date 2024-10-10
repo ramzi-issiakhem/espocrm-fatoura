@@ -1,0 +1,82 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "accountName"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "title"
+                },
+                {
+                    "name": "addressCity"
+                }
+            ],
+            [
+                false,
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "source"
+                }
+            ],
+            [
+                {
+                    "name": "opportunityAmount"
+                },
+                {
+                    "name": "campaign"
+                }
+            ],
+            [
+                {
+                    "name": "industry"
+                },
+                {
+                    "name": "cCallStatus"
+                }
+            ],
+            [
+                {
+                    "name": "cEmailStatus"
+                },
+                {
+                    "name": "cEvents"
+                }
+            ],
+            [
+                {
+                    "name": "cLicenseIssued"
+                },
+                {
+                    "name": "cInvoiceNumber"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    }
+]

@@ -1,0 +1,65 @@
+{
+    "kanbanViewMode": true,
+    "color": "#d6a2c9",
+    "iconClass": "fas fa-address-card",
+    "dynamicLogic": {
+        "fields": {
+            "name": {
+                "required": {
+                    "conditionGroup": [
+                        {
+                            "type": "isEmpty",
+                            "attribute": "accountName"
+                        },
+                        {
+                            "type": "isEmpty",
+                            "attribute": "emailAddress"
+                        },
+                        {
+                            "type": "isEmpty",
+                            "attribute": "phoneNumber"
+                        }
+                    ]
+                }
+            },
+            "cLicenseIssued": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Won"
+                        }
+                    ]
+                }
+            },
+            "cQuoteNumber": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Negotiation"
+                        },
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Won"
+                        }
+                    ]
+                }
+            },
+            "cInvoiceNumber": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "status",
+                            "value": "Won"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

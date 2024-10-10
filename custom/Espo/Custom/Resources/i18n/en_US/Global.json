@@ -1,0 +1,10 @@
+{
+    "scopeNames": {
+        "Opportunity": "Client",
+        "Account": "Company"
+    },
+    "scopeNamesPlural": {
+        "Opportunity": "Clients",
+        "Account": "Companies"
+    }
+}
