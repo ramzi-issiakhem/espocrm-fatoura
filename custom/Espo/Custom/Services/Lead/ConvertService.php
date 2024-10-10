@@ -44,6 +44,7 @@ class ConvertService extends ParentConvertService
             throw(new ConflictSilent('The License Field in the lead must be issued to convert it'));
         }
 
+
         $invoiceNumber = $lead->get('cInvoiceNumber');
         if (empty($invoiceNumber)) {
             throw(new ConflictSilent('The Invoice Number Field in the lead must be filled to convert it'));
@@ -55,10 +56,11 @@ class ConvertService extends ParentConvertService
         }
 
         $opportunity = parent::processOpportunity($lead, $records, $duplicateCheck, $duplicateList, $skipSave, $account, $contact);
-        $opportunity->set('cPhoneNumber', $lead->get('phoneNumber'));
 
-        return parent::processOpportunity($lead, $records, $duplicateCheck, $duplicateList, $skipSave, $account, $contact);
+        $opportunity->set('cInvoiceNumber', $invoiceNumber);
+        $opportunity->set('cLicenseNumber', $lead->get('cLicenseNumber'));
 
+        return $opportunity;
     }
 
 

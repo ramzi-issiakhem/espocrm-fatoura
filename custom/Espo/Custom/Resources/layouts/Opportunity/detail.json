@@ -27,19 +27,6 @@
             ],
             [
                 {
-                    "name": "contacts"
-                },
-                {
-                    "name": "leadSource"
-                }
-            ],
-            [
-                {
-                    "name": "description"
-                }
-            ],
-            [
-                {
                     "name": "cCallStatus"
                 },
                 {
@@ -66,9 +53,7 @@
                 {
                     "name": "originalLead"
                 },
-                {
-                    "name": "campaign"
-                }
+                false
             ]
         ],
         "style": "default",
@@ -79,6 +64,27 @@
             [
                 {
                     "name": "cPhoneNumber"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "noteStyle": "info",
+        "label": ""
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "cInvoiceNumber"
+                },
+                {
+                    "name": "cLicenseNumber"
+                }
+            ],
+            [
+                {
+                    "name": "cExpirationDate"
                 },
                 false
             ]

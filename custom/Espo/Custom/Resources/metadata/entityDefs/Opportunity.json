@@ -36,26 +36,6 @@
             "displayAsLabel": true,
             "labelType": "state"
         },
-        "cCallStatus": {
-            "type": "enum",
-            "options": [
-                "Not Interested",
-                "Not Called",
-                "Interested",
-                "Didn't pick up",
-                "Ghosted"
-            ],
-            "default": "Not Called",
-            "style": {
-                "Not Interested": "danger",
-                "Not Called": "info",
-                "Interested": "success",
-                "Didn't pick up": "warning",
-                "Ghosted": "danger"
-            },
-            "maxLength": 100,
-            "isCustom": true
-        },
         "name": {
             "options": [
                 "Deal - Fatoura Compta Auto-Entrepreneur",
@@ -65,67 +45,25 @@
         "closeDate": {
             "default": "javascript: return this.dateTime.getToday();"
         },
-        "cClientFeedback": {
-            "type": "array",
-            "storeArrayValues": true,
-            "noEmptyString": true,
-            "default": [],
-            "options": [
-                "Cold",
-                "Warm",
-                "Asked for pricing",
-                "Curious",
-                "Onboarding",
-                "Will test and get back",
-                "Expensive",
-                "Missing features",
-                "I forgot",
-                "Mobile app",
-                "Send documentation"
-            ],
-            "isCustom": true
-        },
         "cContactedStatus": {
             "type": "enum",
-            "default": null,
-            "optionsReference": "Lead.cContactedStatus",
-            "style": {},
+            "default": "Not Contacted",
+            "optionsReference": null,
+            "style": {
+                "Not Contacted": null
+            },
             "maxLength": 100,
-            "isCustom": true
+            "isCustom": true,
+            "options": [
+                "Not Contacted"
+            ]
         },
         "cEmailStatus": {
             "type": "enum",
-            "default": "Delivered",
+            "default": null,
             "optionsReference": "Lead.cEmailStatus",
-            "style": {},
+            "style": [],
             "maxLength": 100,
-            "isCustom": true
-        },
-        "cEvent": {
-            "type": "enum",
-            "options": [
-                "Using App",
-                "Using Web",
-                "Downloaded mobile app"
-            ],
-            "default": "Using Web",
-            "style": {
-                "Using App": null,
-                "Using Web": null,
-                "Downloaded mobile app": null
-            },
-            "maxLength": 100,
-            "isCustom": true
-        },
-        "cLeadSource": {
-            "type": "array",
-            "storeArrayValues": true,
-            "noEmptyString": true,
-            "default": [],
-            "options": [
-                "Ad Id",
-                "Email Campaign"
-            ],
             "isCustom": true
         },
         "cPhoneNumber": {
@@ -133,27 +71,6 @@
             "required": false,
             "maxLength": 100,
             "options": [],
-            "isCustom": true
-        },
-        "cComments": {
-            "type": "enum",
-            "options": [
-                "Expensive",
-                "Missing Features",
-                "Company Closed",
-                "Not Useful",
-                "Send Invoice",
-                ""
-            ],
-            "style": {
-                "Expensive": null,
-                "Missing Features": null,
-                "Company Closed": null,
-                "Not Useful": null,
-                "Send Invoice": null,
-                "": null
-            },
-            "maxLength": 100,
             "isCustom": true
         },
         "cLastEvent": {
@@ -172,12 +89,16 @@
             "type": "varchar",
             "maxLength": 100,
             "options": [],
-            "isCustom": true
+            "isCustom": true,
+            "required": true
         },
         "cExpirationDate": {
             "notNull": false,
             "type": "date",
             "isCustom": true
+        },
+        "leadSource": {
+            "optionsReference": null
         }
     }
 }

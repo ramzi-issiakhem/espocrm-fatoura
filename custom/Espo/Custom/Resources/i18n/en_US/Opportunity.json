@@ -19,55 +19,15 @@
             "Retained": "Retained",
             "Churned": "Churned"
         },
-        "cCallStatus": {
-            "Not Interested": "Not Interested",
-            "Not Called": "Not Called",
-            "Interested": "Interested",
-            "Didn't pick up": "Didn't pick up",
-            "Ghosted": "Ghosted"
+        "cContactedStatus": {
+            "Not Contacted": "Not Contacted"
         },
-        "cClientFeedback": {
-            "Cold": "Cold",
-            "Warm": "Warm",
-            "Asked for pricing": "Asked for pricing",
-            "Curious": "Curious",
-            "Onboarding": "Onboarding",
-            "Will test and get back": "Will test and get back",
-            "Expensive": "Expensive",
-            "Missing features": "Missing features",
-            "I forgot": "I forgot",
-            "Mobile app": "Mobile app",
-            "Send documentation": "Send documentation"
-        },
-        "cContactedStatus": [],
-        "cEmailStatus": [],
-        "cEvent": {
-            "Using App": "Using App",
-            "Using Web": "Using Web",
-            "Downloaded mobile app": "Downloaded mobile app"
-        },
-        "cLeadSource": {
-            "Ad Id": "Ad Id",
-            "Email Campaign": "Email Campaign"
-        },
-        "cComments": {
-            "Expensive": "Expensive",
-            "Missing Features": "Missing Features",
-            "Company Closed": "Company Closed",
-            "Not Useful": "Not Useful",
-            "Send Invoice": "Send Invoice",
-            "": ""
-        }
+        "cEmailStatus": []
     },
     "fields": {
-        "cCallStatus": "CallStatus",
-        "cClientFeedback": "Client Feedback",
         "cContactedStatus": "Contacted Status",
         "cEmailStatus": "Email Status",
-        "cEvent": "Event",
-        "cLeadSource": "Lead Source",
         "cPhoneNumber": "Phone Number",
-        "cComments": "Comments",
         "cLastEvent": "Last Event",
         "cInvoiceNumber": "Invoice Number",
         "cLicenseNumber": "License Number",
