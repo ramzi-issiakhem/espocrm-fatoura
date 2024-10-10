@@ -395,7 +395,7 @@ class ConvertService
      * @throws BadRequest
      * @throws Conflict
      */
-    private function processOpportunity(
+    protected function processOpportunity(
         Lead $lead,
         Values $records,
         bool $duplicateCheck,
