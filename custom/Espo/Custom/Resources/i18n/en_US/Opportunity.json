@@ -49,6 +49,14 @@
         "cLeadSource": {
             "Ad Id": "Ad Id",
             "Email Campaign": "Email Campaign"
+        },
+        "cComments": {
+            "Expensive": "Expensive",
+            "Missing Features": "Missing Features",
+            "Company Closed": "Company Closed",
+            "Not Useful": "Not Useful",
+            "Send Invoice": "Send Invoice",
+            "": ""
         }
     },
     "fields": {
@@ -58,6 +66,11 @@
         "cEmailStatus": "Email Status",
         "cEvent": "Event",
         "cLeadSource": "Lead Source",
-        "cPhoneNumber": "Phone Number"
+        "cPhoneNumber": "Phone Number",
+        "cComments": "Comments",
+        "cLastEvent": "Last Event",
+        "cInvoiceNumber": "Invoice Number",
+        "cLicenseNumber": "License Number",
+        "cExpirationDate": "Expiration Date"
     }
 }

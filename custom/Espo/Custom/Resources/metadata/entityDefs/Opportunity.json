@@ -134,6 +134,50 @@
             "maxLength": 100,
             "options": [],
             "isCustom": true
+        },
+        "cComments": {
+            "type": "enum",
+            "options": [
+                "Expensive",
+                "Missing Features",
+                "Company Closed",
+                "Not Useful",
+                "Send Invoice",
+                ""
+            ],
+            "style": {
+                "Expensive": null,
+                "Missing Features": null,
+                "Company Closed": null,
+                "Not Useful": null,
+                "Send Invoice": null,
+                "": null
+            },
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cLastEvent": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cInvoiceNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cLicenseNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cExpirationDate": {
+            "notNull": false,
+            "type": "date",
+            "isCustom": true
         }
     }
 }
