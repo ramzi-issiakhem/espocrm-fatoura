@@ -37,14 +37,19 @@
                 "visible": {
                     "conditionGroup": [
                         {
-                            "type": "equals",
-                            "attribute": "status",
-                            "value": "Negotiation"
-                        },
-                        {
-                            "type": "equals",
-                            "attribute": "status",
-                            "value": "Won"
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Won"
+                                },
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Negotiation"
+                                }
+                            ]
                         }
                     ]
                 }

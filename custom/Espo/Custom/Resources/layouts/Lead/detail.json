@@ -19,14 +19,8 @@
             ],
             [
                 {
-                    "name": "title"
-                },
-                {
                     "name": "addressCity"
-                }
-            ],
-            [
-                false,
+                },
                 false
             ]
         ],
@@ -48,25 +42,23 @@
                     "name": "opportunityAmount"
                 },
                 {
-                    "name": "campaign"
+                    "name": "cEmailStatus"
                 }
             ],
             [
                 {
-                    "name": "industry"
+                    "name": "cEvents"
                 },
                 {
                     "name": "cCallStatus"
                 }
-            ],
-            [
-                {
-                    "name": "cEmailStatus"
-                },
-                {
-                    "name": "cEvents"
-                }
-            ],
+            ]
+        ],
+        "style": "default",
+        "label": "Details"
+    },
+    {
+        "rows": [
             [
                 {
                     "name": "cLicenseIssued"
@@ -74,9 +66,16 @@
                 {
                     "name": "cInvoiceNumber"
                 }
+            ],
+            [
+                {
+                    "name": "cQuoteNumber"
+                },
+                false
             ]
         ],
         "style": "default",
-        "label": "Details"
+        "noteStyle": "info",
+        "label": ""
     }
 ]
