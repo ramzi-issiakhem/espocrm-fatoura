@@ -1,9 +1,6 @@
 {
-    "kanbanViewMode": true,
-    "color": "#9fc77e",
-    "iconClass": "fas fa-dollar-sign",
     "relationshipPanels": {
-        "account": {
+        "accounts": {
             "layout": null,
             "selectPrimaryFilterName": null
         }

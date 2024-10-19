@@ -8,11 +8,14 @@
         "createdOpportunity": "Client",
         "title": "Role",
         "addressCity": "Wilaya",
-        "cSourceData": "Source Data",
-        "cLicenseIssued": "License Issued",
         "cComments": "Comments",
+        "cInvoiceNumber": "Invoice Number",
+        "cLeadSource": "Lead Source",
+        "cLeadSourceData": "Lead Source Data",
+        "cQuoteAttachement": "Quote Attachement",
         "cQuoteNumber": "Quote Number",
-        "cInvoiceNumber": "Invoice Number"
+        "cSubscriptionAdded": "Subscription Added",
+        "cInvoiceAttachement": "Invoice Attachement"
     },
     "options": {
         "cCallStatus": {
@@ -78,6 +81,16 @@
             "I forgot": "I forgot",
             "Tried Mobile App": "Tried Mobile App",
             "Send Documentation": "Send Documentation",
+            "": ""
+        },
+        "cLeadSource": {
+            "Meta Ads": "Meta Ads",
+            "Email Campaigns": "Email Campaigns",
+            "Blog Link": "Blog Link",
+            "Affiliate Program": "Affiliate Program",
+            "Public Relations": "Public Relations",
+            "Call": "Call",
+            "Email": "Email",
             "": ""
         }
     }

@@ -9,5 +9,10 @@
         "fullTextSearch": false,
         "countDisabled": false
     },
-    "optimisticConcurrencyControl": false
+    "optimisticConcurrencyControl": false,
+    "links": {
+        "accounts": {
+            "audited": false
+        }
+    }
 }

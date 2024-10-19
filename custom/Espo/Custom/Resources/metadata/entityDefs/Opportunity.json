@@ -83,22 +83,99 @@
             "type": "varchar",
             "maxLength": 100,
             "options": [],
-            "isCustom": true
-        },
-        "cLicenseNumber": {
-            "type": "varchar",
-            "maxLength": 100,
-            "options": [],
             "isCustom": true,
             "required": true
         },
         "cExpirationDate": {
             "notNull": false,
             "type": "date",
-            "isCustom": true
+            "isCustom": true,
+            "required": true
         },
         "leadSource": {
-            "optionsReference": null
+            "optionsReference": null,
+            "readOnly": true,
+            "inlineEditDisabled": true
+        },
+        "cSubscriptionID": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cInvoiceAttachement": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "previewSize": "medium",
+            "accept": [],
+            "maxCount": 1,
+            "isCustom": true
+        },
+        "cQuoteAttachement": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "previewSize": "medium",
+            "accept": [],
+            "maxCount": 1,
+            "isCustom": true
+        },
+        "cCallStatus": {
+            "type": "enum",
+            "optionsReference": "Lead.cCallStatus",
+            "default": "Not Called",
+            "style": [],
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cEvent": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cQuoteNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cLeadSourceData": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cLeadSource": {
+            "type": "enum",
+            "optionsReference": "Lead.cLeadSource",
+            "style": [],
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cClientComments": {
+            "type": "enum",
+            "style": {},
+            "maxLength": 100,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "cInvoiceAttachement": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "cQuoteAttachement": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
         }
     }
 }

@@ -51,8 +51,15 @@ class LeadBeforeSave implements BeforeSave
 
         // Check if the lead is going to Won STage and if the quote number is defined
         if ($entity->isAttributeChanged('status')) {
-            if ($stage == "Won" && $entity->get('cQuoteNumber') == null) {
-                throw new ConflictSilent('The Quote Number Field in the lead must be filled to transfert it to the Won stage');
+            if ($stage == "Won") {
+
+                if ($entity->get('cSubscriptionAdded') !== true) {
+                    throw new ConflictSilent('The Subscription Field in the lead must be validated to transfer it  to the Won stage');
+                }
+
+                if ($entity->get('cQuoteNumber') == null) {
+                    throw new ConflictSilent('The Quote Number Field in the lead must be filled to transfer it to the Won stage');
+                }
             }
         }
 

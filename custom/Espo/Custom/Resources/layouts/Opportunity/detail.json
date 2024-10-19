@@ -19,7 +19,7 @@
             ],
             [
                 {
-                    "name": "probability"
+                    "name": "contact"
                 },
                 {
                     "name": "closeDate"
@@ -27,26 +27,13 @@
             ],
             [
                 {
+                    "name": "cContactedStatus"
+                },
+                {
                     "name": "cCallStatus"
                 },
                 {
-                    "name": "cContactedStatus"
-                }
-            ],
-            [
-                {
                     "name": "cEmailStatus"
-                },
-                {
-                    "name": "cEvent"
-                }
-            ],
-            [
-                {
-                    "name": "cClientFeedback"
-                },
-                {
-                    "name": "cLeadSource"
                 }
             ],
             [
@@ -54,13 +41,7 @@
                     "name": "originalLead"
                 },
                 false
-            ]
-        ],
-        "style": "default",
-        "label": ""
-    },
-    {
-        "rows": [
+            ],
             [
                 {
                     "name": "cPhoneNumber"
@@ -69,7 +50,6 @@
             ]
         ],
         "style": "default",
-        "noteStyle": "info",
         "label": ""
     },
     {
@@ -79,14 +59,22 @@
                     "name": "cInvoiceNumber"
                 },
                 {
-                    "name": "cLicenseNumber"
+                    "name": "cInvoiceAttachement"
                 }
             ],
             [
                 {
-                    "name": "cExpirationDate"
+                    "name": "cQuoteAttachement"
                 },
                 false
+            ],
+            [
+                {
+                    "name": "cSubscriptionID"
+                },
+                {
+                    "name": "cExpirationDate"
+                }
             ]
         ],
         "style": "default",

@@ -63,13 +63,13 @@ use RuntimeException;
 class ConvertService
 {
     public function __construct(
-        private Acl $acl,
-        private ServiceContainer $recordServiceContainer,
-        private EntityManager $entityManager,
-        private User $user,
-        private StreamService $streamService,
-        private Metadata $metadata,
-        private FieldUtil $fieldUtil
+        protected Acl $acl,
+        protected ServiceContainer $recordServiceContainer,
+        protected EntityManager $entityManager,
+        protected User $user,
+        protected StreamService $streamService,
+        protected Metadata $metadata,
+        protected FieldUtil $fieldUtil
     ) {}
 
     /**

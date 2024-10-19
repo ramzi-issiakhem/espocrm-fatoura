@@ -1,12 +1,13 @@
 <div class="header page-header">{{{header}}}</div>
 
 {{#each scopeList}}
-<div class="record">
+<div class="record" {{#ifNotEqual this "Opportunity"}} style="display: none" {{/ifNotEqual}} >
     <label style="user-select: none; cursor: pointer;" class="text-large">
         <input
             type="checkbox"
             class="check-scope form-checkbox"
             data-scope="{{./this}}"
+            checked
         >
         <span>{{translate this category='scopeNames'}}</span>
     </label>

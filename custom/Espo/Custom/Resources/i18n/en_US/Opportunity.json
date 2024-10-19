@@ -22,7 +22,10 @@
         "cContactedStatus": {
             "Not Contacted": "Not Contacted"
         },
-        "cEmailStatus": []
+        "cEmailStatus": [],
+        "cCallStatus": [],
+        "cLeadSource": [],
+        "cClientComments": []
     },
     "fields": {
         "cContactedStatus": "Contacted Status",
@@ -30,7 +33,20 @@
         "cPhoneNumber": "Phone Number",
         "cLastEvent": "Last Event",
         "cInvoiceNumber": "Invoice Number",
-        "cLicenseNumber": "License Number",
-        "cExpirationDate": "Expiration Date"
+        "cExpirationDate": "Expiration Date",
+        "cSubscriptionID": "Subscription ID",
+        "cInvoiceAttachement": "Invoice Attachement",
+        "cQuoteAttachement": "Quote Attachement",
+        "cCallStatus": "Call Status",
+        "cEvent": "Event",
+        "cQuoteNumber": "Quote Number",
+        "cLeadSourceData": "Lead Source Data",
+        "cLeadSource": "Lead Source",
+        "leadSource": "Lead Source ( USELESS )",
+        "cClientComments": "Client Comments",
+        "account": "Company"
+    },
+    "links": {
+        "account": "Company"
     }
 }

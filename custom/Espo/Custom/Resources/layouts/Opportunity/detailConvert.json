@@ -11,9 +11,19 @@
             ],
             [
                 {
-                    "name": "closeDate"
+                    "name": "cLeadSource"
                 },
-                false
+                {
+                    "name": "cLeadSourceData"
+                }
+            ],
+            [
+                {
+                    "name": "cPhoneNumber"
+                },
+                {
+                    "name": "closeDate"
+                }
             ]
         ],
         "style": "default",
@@ -23,17 +33,19 @@
         "rows": [
             [
                 {
-                    "name": "cLicenseNumber"
+                    "name": "cInvoiceNumber"
                 },
                 {
-                    "name": "cInvoiceNumber"
+                    "name": "cQuoteNumber"
                 }
             ],
             [
                 {
-                    "name": "cExpirationDate"
+                    "name": "cSubscriptionID"
                 },
-                false
+                {
+                    "name": "cExpirationDate"
+                }
             ]
         ],
         "dynamicLogicVisible": null,
