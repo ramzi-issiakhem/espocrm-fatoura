@@ -39,14 +39,15 @@
             [
                 {
                     "name": "originalLead"
-                },
-                false
+                }
             ],
             [
                 {
                     "name": "cPhoneNumber"
                 },
-                false
+                {
+                    "name": "cLastEvent"
+                }
             ]
         ],
         "style": "default",

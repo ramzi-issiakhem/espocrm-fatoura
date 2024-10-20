@@ -128,12 +128,6 @@
             "maxLength": 100,
             "isCustom": true
         },
-        "cEvent": {
-            "type": "varchar",
-            "maxLength": 100,
-            "options": [],
-            "isCustom": true
-        },
         "cQuoteNumber": {
             "type": "varchar",
             "maxLength": 100,
@@ -155,7 +149,7 @@
         },
         "cClientComments": {
             "type": "enum",
-            "style": {},
+            "style": [],
             "maxLength": 100,
             "isCustom": true
         }
