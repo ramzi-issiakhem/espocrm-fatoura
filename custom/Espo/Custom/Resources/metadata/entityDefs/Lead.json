@@ -14,6 +14,8 @@
     },
     "optimisticConcurrencyControl": false,
     "convertEntityList": [
+        "Account",
+        "Contact",
         "Opportunity"
     ],
     "fields": {
@@ -72,22 +74,22 @@
         "cEvents": {
             "type": "enum",
             "options": [
+                "",
                 "Filled website form on mobile",
                 "Filled website form",
                 "Registered",
                 "Using App",
-                "Downloaded Mobile App",
-                ""
+                "Downloaded Mobile App"
             ],
             "style": {
+                "": null,
                 "Filled website form on mobile": null,
                 "Filled website form": null,
                 "Registered": null,
                 "Using App": null,
-                "Downloaded Mobile App": null,
-                "": null
+                "Downloaded Mobile App": null
             },
-            "default": "Filled website form on mobile",
+            "default": null,
             "maxLength": 100,
             "isCustom": true
         },
@@ -126,12 +128,6 @@
         "phoneNumber": {
             "required": true
         },
-        "cSourceData": {
-            "type": "varchar",
-            "maxLength": 100,
-            "options": [],
-            "isCustom": true
-        },
         "source": {
             "options": [
                 "",
@@ -154,15 +150,10 @@
                 "Public Relations": null
             }
         },
-        "cLicenseIssued": {
-            "notNull": true,
-            "type": "bool",
-            "isCustom": true,
-            "audited": true
-        },
         "cComments": {
             "type": "enum",
             "options": [
+                "",
                 "Cold",
                 "Warm",
                 "Asked for pricing",
@@ -173,10 +164,10 @@
                 "Missing Features",
                 "I forgot",
                 "Tried Mobile App",
-                "Send Documentation",
-                ""
+                "Send Documentation"
             ],
             "style": {
+                "": null,
                 "Cold": null,
                 "Warm": null,
                 "Asked for pricing": null,
@@ -187,10 +178,55 @@
                 "Missing Features": null,
                 "I forgot": null,
                 "Tried Mobile App": null,
-                "Send Documentation": null,
+                "Send Documentation": null
+            },
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cInvoiceNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cLeadSource": {
+            "type": "enum",
+            "options": [
+                "Meta Ads",
+                "Email Campaigns",
+                "Blog Link",
+                "Affiliate Program",
+                "Public Relations",
+                "Call",
+                "Email",
+                ""
+            ],
+            "default": null,
+            "style": {
+                "Meta Ads": null,
+                "Email Campaigns": null,
+                "Blog Link": null,
+                "Affiliate Program": null,
+                "Public Relations": null,
+                "Call": null,
+                "Email": null,
                 "": null
             },
             "maxLength": 100,
+            "isCustom": true
+        },
+        "cLeadSourceData": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cQuoteAttachement": {
+            "type": "attachmentMultiple",
+            "previewSize": "small",
+            "sourceList": [],
+            "maxCount": 1,
+            "accept": [],
             "isCustom": true
         },
         "cQuoteNumber": {
@@ -199,11 +235,36 @@
             "options": [],
             "isCustom": true
         },
-        "cInvoiceNumber": {
-            "type": "varchar",
-            "maxLength": 100,
-            "options": [],
+        "cSubscriptionAdded": {
+            "notNull": true,
+            "type": "bool",
             "isCustom": true
+        },
+        "cInvoiceAttachement": {
+            "type": "attachmentMultiple",
+            "previewSize": "medium",
+            "maxCount": 1,
+            "sourceList": [],
+            "accept": [],
+            "isCustom": true
+        }
+    },
+    "links": {
+        "cQuoteAttachement": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "cInvoiceAttachement": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
         }
     }
 }

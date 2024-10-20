@@ -1,5 +1,15 @@
 {
     "kanbanViewMode": false,
     "color": "#a4c5e0",
-    "iconClass": "fas fa-id-badge"
+    "iconClass": "fas fa-id-badge",
+    "relationshipPanels": {
+        "accounts": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "account": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
 }

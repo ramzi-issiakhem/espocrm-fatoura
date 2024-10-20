@@ -63,13 +63,13 @@ use RuntimeException;
 class ConvertService
 {
     public function __construct(
-        private Acl $acl,
-        private ServiceContainer $recordServiceContainer,
-        private EntityManager $entityManager,
-        private User $user,
-        private StreamService $streamService,
-        private Metadata $metadata,
-        private FieldUtil $fieldUtil
+        protected Acl $acl,
+        protected ServiceContainer $recordServiceContainer,
+        protected EntityManager $entityManager,
+        protected User $user,
+        protected StreamService $streamService,
+        protected Metadata $metadata,
+        protected FieldUtil $fieldUtil
     ) {}
 
     /**
@@ -395,7 +395,7 @@ class ConvertService
      * @throws BadRequest
      * @throws Conflict
      */
-    private function processOpportunity(
+    protected function processOpportunity(
         Lead $lead,
         Values $records,
         bool $duplicateCheck,
@@ -447,7 +447,7 @@ class ConvertService
         try {
             $opportunity = $service->create($values, CreateParams::create()->withSkipDuplicateCheck());
         } catch (BadRequest|Conflict $e) {
-            throw new RuntimeException($e->getMessage());
+            throw new RuntimeException($e);
         }
 
         if ($contact) {

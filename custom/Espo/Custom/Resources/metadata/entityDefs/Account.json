@@ -31,6 +31,36 @@
         },
         "assignedUser": {
             "disabled": true
+        },
+        "contacts": {
+            "audited": false
+        },
+        "callsPrimary": {
+            "audited": false
+        },
+        "cases": {
+            "audited": false
+        },
+        "contactsPrimary": {
+            "audited": false
+        },
+        "documents": {
+            "audited": true
+        },
+        "emailsPrimary": {
+            "audited": false
+        },
+        "meetingsPrimary": {
+            "audited": false
+        },
+        "opportunities": {
+            "audited": false
+        },
+        "targetLists": {
+            "audited": false
+        },
+        "tasksPrimary": {
+            "audited": false
         }
     }
 }

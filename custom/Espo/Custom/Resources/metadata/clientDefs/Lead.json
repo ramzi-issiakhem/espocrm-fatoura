@@ -22,13 +22,34 @@
                     ]
                 }
             },
-            "cLicenseIssued": {
+            "cInvoiceNumber": {
                 "visible": {
                     "conditionGroup": [
                         {
                             "type": "equals",
                             "attribute": "status",
                             "value": "Won"
+                        }
+                    ]
+                }
+            },
+            "cSubscriptionAdded": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Negotiation"
+                                },
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Won"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -37,19 +58,45 @@
                 "visible": {
                     "conditionGroup": [
                         {
-                            "type": "equals",
-                            "attribute": "status",
-                            "value": "Negotiation"
-                        },
-                        {
-                            "type": "equals",
-                            "attribute": "status",
-                            "value": "Won"
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Negotiation"
+                                },
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Won"
+                                }
+                            ]
                         }
                     ]
                 }
             },
-            "cInvoiceNumber": {
+            "cQuoteAttachement": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Negotiation"
+                                },
+                                {
+                                    "type": "equals",
+                                    "attribute": "status",
+                                    "value": "Won"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "cInvoiceAttachement": {
                 "visible": {
                     "conditionGroup": [
                         {

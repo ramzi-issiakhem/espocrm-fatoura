@@ -36,26 +36,6 @@
             "displayAsLabel": true,
             "labelType": "state"
         },
-        "cCallStatus": {
-            "type": "enum",
-            "options": [
-                "Not Interested",
-                "Not Called",
-                "Interested",
-                "Didn't pick up",
-                "Ghosted"
-            ],
-            "default": "Not Called",
-            "style": {
-                "Not Interested": "danger",
-                "Not Called": "info",
-                "Interested": "success",
-                "Didn't pick up": "warning",
-                "Ghosted": "danger"
-            },
-            "maxLength": 100,
-            "isCustom": true
-        },
         "name": {
             "options": [
                 "Deal - Fatoura Compta Auto-Entrepreneur",
@@ -65,67 +45,25 @@
         "closeDate": {
             "default": "javascript: return this.dateTime.getToday();"
         },
-        "cClientFeedback": {
-            "type": "array",
-            "storeArrayValues": true,
-            "noEmptyString": true,
-            "default": [],
-            "options": [
-                "Cold",
-                "Warm",
-                "Asked for pricing",
-                "Curious",
-                "Onboarding",
-                "Will test and get back",
-                "Expensive",
-                "Missing features",
-                "I forgot",
-                "Mobile app",
-                "Send documentation"
-            ],
-            "isCustom": true
-        },
         "cContactedStatus": {
             "type": "enum",
-            "default": null,
-            "optionsReference": "Lead.cContactedStatus",
-            "style": {},
+            "default": "Not Contacted",
+            "optionsReference": null,
+            "style": {
+                "Not Contacted": null
+            },
             "maxLength": 100,
-            "isCustom": true
+            "isCustom": true,
+            "options": [
+                "Not Contacted"
+            ]
         },
         "cEmailStatus": {
             "type": "enum",
-            "default": "Delivered",
+            "default": null,
             "optionsReference": "Lead.cEmailStatus",
-            "style": {},
+            "style": [],
             "maxLength": 100,
-            "isCustom": true
-        },
-        "cEvent": {
-            "type": "enum",
-            "options": [
-                "Using App",
-                "Using Web",
-                "Downloaded mobile app"
-            ],
-            "default": "Using Web",
-            "style": {
-                "Using App": null,
-                "Using Web": null,
-                "Downloaded mobile app": null
-            },
-            "maxLength": 100,
-            "isCustom": true
-        },
-        "cLeadSource": {
-            "type": "array",
-            "storeArrayValues": true,
-            "noEmptyString": true,
-            "default": [],
-            "options": [
-                "Ad Id",
-                "Email Campaign"
-            ],
             "isCustom": true
         },
         "cPhoneNumber": {
@@ -134,6 +72,104 @@
             "maxLength": 100,
             "options": [],
             "isCustom": true
+        },
+        "cLastEvent": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cInvoiceNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true,
+            "required": true
+        },
+        "cExpirationDate": {
+            "notNull": false,
+            "type": "date",
+            "isCustom": true,
+            "required": true
+        },
+        "leadSource": {
+            "optionsReference": null,
+            "readOnly": true,
+            "inlineEditDisabled": true
+        },
+        "cSubscriptionID": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cInvoiceAttachement": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "previewSize": "medium",
+            "accept": [],
+            "maxCount": 1,
+            "isCustom": true
+        },
+        "cQuoteAttachement": {
+            "type": "attachmentMultiple",
+            "sourceList": [],
+            "previewSize": "medium",
+            "accept": [],
+            "maxCount": 1,
+            "isCustom": true
+        },
+        "cCallStatus": {
+            "type": "enum",
+            "optionsReference": "Lead.cCallStatus",
+            "default": "Not Called",
+            "style": [],
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cQuoteNumber": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cLeadSourceData": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cLeadSource": {
+            "type": "enum",
+            "optionsReference": "Lead.cLeadSource",
+            "style": [],
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cClientComments": {
+            "type": "enum",
+            "style": [],
+            "maxLength": 100,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "cInvoiceAttachement": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
+        },
+        "cQuoteAttachement": {
+            "type": "hasChildren",
+            "entity": "Attachment",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true,
+            "relationName": "attachments",
+            "utility": true
         }
     }
 }

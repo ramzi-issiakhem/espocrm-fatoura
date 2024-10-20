@@ -6,39 +6,15 @@
                     "name": "name"
                 },
                 {
-                    "name": "account"
-                }
-            ],
-            [
-                {
-                    "name": "stage"
-                },
-                {
                     "name": "amount"
                 }
             ],
             [
                 {
-                    "name": "contact"
+                    "name": "cLeadSource"
                 },
                 {
-                    "name": "closeDate"
-                }
-            ],
-            [
-                {
-                    "name": "cContactedStatus"
-                },
-                {
-                    "name": "cCallStatus"
-                },
-                {
-                    "name": "cEmailStatus"
-                }
-            ],
-            [
-                {
-                    "name": "originalLead"
+                    "name": "cLeadSourceData"
                 }
             ],
             [
@@ -46,7 +22,7 @@
                     "name": "cPhoneNumber"
                 },
                 {
-                    "name": "cLastEvent"
+                    "name": "closeDate"
                 }
             ]
         ],
@@ -60,14 +36,8 @@
                     "name": "cInvoiceNumber"
                 },
                 {
-                    "name": "cInvoiceAttachement"
+                    "name": "cQuoteNumber"
                 }
-            ],
-            [
-                {
-                    "name": "cQuoteAttachement"
-                },
-                false
             ],
             [
                 {
@@ -78,8 +48,12 @@
                 }
             ]
         ],
+        "dynamicLogicVisible": null,
         "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
         "noteStyle": "info",
-        "label": ""
+        "customLabel": "Subscription Details"
     }
 ]

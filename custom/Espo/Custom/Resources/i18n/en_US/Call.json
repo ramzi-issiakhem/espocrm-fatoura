@@ -1,0 +1,8 @@
+{
+    "fields": {
+        "account": "Company"
+    },
+    "links": {
+        "account": "Company"
+    }
+}

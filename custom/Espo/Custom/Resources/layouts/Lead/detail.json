@@ -19,28 +19,26 @@
             ],
             [
                 {
-                    "name": "title"
-                },
-                {
                     "name": "addressCity"
-                }
-            ],
-            [
-                false,
+                },
                 false
             ]
         ],
+        "dynamicLogicVisible": null,
         "style": "default",
-        "label": "Overview"
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Client Details"
     },
     {
         "rows": [
             [
                 {
-                    "name": "status"
+                    "name": "cLeadSource"
                 },
                 {
-                    "name": "source"
+                    "name": "cLeadSourceData"
                 }
             ],
             [
@@ -48,12 +46,15 @@
                     "name": "opportunityAmount"
                 },
                 {
-                    "name": "campaign"
+                    "name": "cEvents"
                 }
             ],
             [
                 {
-                    "name": "industry"
+                    "name": "status"
+                },
+                {
+                    "name": "cEmailStatus"
                 },
                 {
                     "name": "cCallStatus"
@@ -61,22 +62,48 @@
             ],
             [
                 {
-                    "name": "cEmailStatus"
+                    "name": "cComments"
                 },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "customLabel": "Lead Details"
+    },
+    {
+        "rows": [
+            [
                 {
-                    "name": "cEvents"
+                    "name": "cSubscriptionAdded"
                 }
             ],
             [
                 {
-                    "name": "cLicenseIssued"
+                    "name": "cQuoteNumber"
                 },
                 {
+                    "name": "cQuoteAttachement"
+                }
+            ],
+            [
+                {
                     "name": "cInvoiceNumber"
+                },
+                {
+                    "name": "cInvoiceAttachement"
                 }
             ]
         ],
+        "dynamicLogicVisible": null,
         "style": "default",
-        "label": "Details"
+        "tabBreak": false,
+        "hidden": false,
+        "noteText": null,
+        "noteStyle": "info",
+        "customLabel": "Commercial Details"
     }
 ]

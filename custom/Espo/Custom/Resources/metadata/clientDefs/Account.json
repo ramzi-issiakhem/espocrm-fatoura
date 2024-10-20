@@ -1,5 +1,51 @@
 {
     "kanbanViewMode": false,
     "color": "#edc755",
-    "iconClass": "fas fa-building"
+    "iconClass": "fas fa-building",
+    "relationshipPanels": {
+        "contacts": {
+            "layout": "listForAccount",
+            "selectPrimaryFilterName": null
+        },
+        "campaign": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "callsPrimary": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "cases": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "contactsPrimary": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "documents": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "emailsPrimary": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "meetingsPrimary": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "opportunities": {
+            "layout": "listForAccount",
+            "selectPrimaryFilterName": null
+        },
+        "targetLists": {
+            "layout": "listForTarget",
+            "selectPrimaryFilterName": null
+        },
+        "tasksPrimary": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
 }

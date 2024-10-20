@@ -36,9 +36,9 @@ use Espo\Core\Exceptions\Conflict;
 use Espo\Core\Exceptions\Forbidden;
 
 use Espo\Core\Exceptions\NotFound;
+use Espo\Custom\Services\Lead\ConvertService;
 use Espo\Modules\Crm\Tools\Lead\Convert\Params as ConvertParams;
 use Espo\Modules\Crm\Tools\Lead\Convert\Values;
-use Espo\Modules\Crm\Tools\Lead\ConvertService;
 use stdClass;
 
 class Lead extends Record
