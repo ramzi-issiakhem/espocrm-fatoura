@@ -1,19 +1,20 @@
 [
+    "name",
     "assignedUser",
     "teams",
     "createdAt",
-    "createdBy",
     "modifiedAt",
+    "createdBy",
     "address",
     "accountName",
     "campaign",
     "emailAddress",
     "phoneNumber",
+    "cCallStatus",
     "status",
     "source",
     "opportunityAmountConverted",
     "industry",
     "targetLists",
-    "createdAccount",
-    "cTestest"
+    "createdAccount"
 ]

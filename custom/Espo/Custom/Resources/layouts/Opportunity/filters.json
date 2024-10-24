@@ -1,0 +1,15 @@
+[
+    "name",
+    "cSubscriptionID",
+    "assignedUser",
+    "teams",
+    "createdAt",
+    "createdBy",
+    "cCallStatus",
+    "cEmail",
+    "account",
+    "campaign",
+    "closeDate",
+    "cExpirationDate",
+    "stage"
+]

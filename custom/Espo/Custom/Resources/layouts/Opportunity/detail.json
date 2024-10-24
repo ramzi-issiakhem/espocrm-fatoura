@@ -49,6 +49,11 @@
                 {
                     "name": "cLastEvent"
                 }
+            ],
+            [
+                {
+                    "name": "originalLead"
+                }
             ]
         ],
         "style": "default",
