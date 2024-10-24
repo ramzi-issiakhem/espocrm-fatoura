@@ -5,8 +5,7 @@
     "kanbanStatusIgnoreList": null,
     "stars": true,
     "duplicateCheckFieldList": [
-        "name",
-        "emailAddress"
+        "name"
     ],
     "assignedUsers": true
 }
