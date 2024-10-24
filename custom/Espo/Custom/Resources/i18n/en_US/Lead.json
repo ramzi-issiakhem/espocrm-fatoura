@@ -1,7 +1,6 @@
 {
     "fields": {
         "cCallStatus": "Call Status",
-        "cEvents": "Events",
         "cEmailStatus": "Email Status",
         "accountName": "Company Name",
         "createdAccount": "Company",
@@ -10,12 +9,13 @@
         "addressCity": "Wilaya",
         "cComments": "Comments",
         "cInvoiceNumber": "Invoice Number",
-        "cLeadSource": "Lead Source",
         "cLeadSourceData": "Lead Source Data",
         "cQuoteAttachement": "Quote Attachement",
         "cQuoteNumber": "Quote Number",
         "cSubscriptionAdded": "Subscription Added",
-        "cInvoiceAttachement": "Invoice Attachement"
+        "cInvoiceAttachement": "Invoice Attachement",
+        "cEvents": "Events",
+        "cLeadSource": "Lead Source"
     },
     "options": {
         "cCallStatus": {
@@ -41,16 +41,6 @@
             "Negotiation": "Negotiation",
             "Won": "Won",
             "Lost": "Lost"
-        },
-        "cEvents": {
-            "Filled website form on mobile": "Filled website form on mobile",
-            "Filled website form": "Filled website form",
-            "Visited the page on desktop": "Visited the page on desktop",
-            "Visited the page on mobile": "Visited the page on mobile",
-            "Registered": "Registered",
-            "": "",
-            "Using App": "Using App",
-            "Downloaded Mobile App": "Downloaded Mobile App"
         },
         "cEmailStatus": {
             "Unsubscribed": "Unsubscribed",
@@ -83,15 +73,12 @@
             "Send Documentation": "Send Documentation",
             "": ""
         },
-        "cLeadSource": {
-            "Meta Ads": "Meta Ads",
-            "Email Campaigns": "Email Campaigns",
-            "Blog Link": "Blog Link",
-            "Affiliate Program": "Affiliate Program",
-            "Public Relations": "Public Relations",
-            "Call": "Call",
-            "Email": "Email",
-            "": ""
+        "cEvents": {
+            "Filled website form on mobile": "Filled website form on mobile",
+            "Filled website form on desktop": "Filled website form on desktop",
+            "Registered": "Registered",
+            "Using app": "Using app",
+            "Downloaded mobile app": "Downloaded mobile app"
         }
     }
 }

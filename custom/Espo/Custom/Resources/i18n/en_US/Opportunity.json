@@ -25,12 +25,12 @@
         "cEmailStatus": [],
         "cCallStatus": [],
         "cLeadSource": [],
-        "cClientComments": []
+        "cClientComments": [],
+        "cPhoneNumber": []
     },
     "fields": {
         "cContactedStatus": "Contacted Status",
         "cEmailStatus": "Email Status",
-        "cPhoneNumber": "Phone Number",
         "cLastEvent": "Last Event",
         "cInvoiceNumber": "Invoice Number",
         "cExpirationDate": "Expiration Date",
@@ -43,7 +43,9 @@
         "cLeadSource": "Lead Source",
         "leadSource": "Lead Source ( USELESS )",
         "cClientComments": "Client Comments",
-        "account": "Company"
+        "account": "Company",
+        "cEmail": "Email",
+        "cPhoneNumber": "Phone Number"
     },
     "links": {
         "account": "Company"

@@ -66,8 +66,15 @@ class ConvertService extends ParentConvertService
             throw(new ConflictSilent('The Quote Number Field in the lead must be filled to convert it'));
         }
 
-        $opportunity = parent::processOpportunity($lead, $records, $duplicateCheck, $duplicateList, $skipSave, $account, $contact);
+        $clientValues = $records->get(Opportunity::ENTITY_TYPE);
+        $clientValues->name         = $lead->get('name');
+        $clientValues->cEmail       = $lead->get('emailAddress');
 
+        $clientValues->cPhoneNumber = $lead->getPhoneNumberGroup()->getNumberList();
+        
+        $records = $records->with(Opportunity::ENTITY_TYPE, $clientValues);
+
+        $opportunity = parent::processOpportunity($lead, $records, $duplicateCheck, $duplicateList, $skipSave, $account, $contact);
         return $opportunity;
     }
 

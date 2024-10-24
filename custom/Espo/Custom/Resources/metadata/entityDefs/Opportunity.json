@@ -3,7 +3,8 @@
         "orderBy": "createdAt",
         "order": "desc",
         "textFilterFields": [
-            "name"
+            "name",
+            "cEmail"
         ],
         "fullTextSearch": false,
         "countDisabled": false
@@ -64,13 +65,6 @@
             "optionsReference": "Lead.cEmailStatus",
             "style": [],
             "maxLength": 100,
-            "isCustom": true
-        },
-        "cPhoneNumber": {
-            "type": "varchar",
-            "required": false,
-            "maxLength": 100,
-            "options": [],
             "isCustom": true
         },
         "cLastEvent": {
@@ -151,6 +145,19 @@
             "type": "enum",
             "style": [],
             "maxLength": 100,
+            "isCustom": true
+        },
+        "cEmail": {
+            "type": "varchar",
+            "maxLength": 100,
+            "options": [],
+            "isCustom": true
+        },
+        "cPhoneNumber": {
+            "type": "array",
+            "storeArrayValues": true,
+            "default": [],
+            "noEmptyString": true,
             "isCustom": true
         }
     },

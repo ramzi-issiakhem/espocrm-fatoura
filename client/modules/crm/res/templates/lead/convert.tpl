@@ -1,7 +1,7 @@
 <div class="header page-header">{{{header}}}</div>
 
 {{#each scopeList}}
-<div class="record" {{#ifNotEqual this "Opportunity"}} style="display: none" {{/ifNotEqual}} >
+<div class="record"  >
     <label style="user-select: none; cursor: pointer;" class="text-large">
         <input
             type="checkbox"
